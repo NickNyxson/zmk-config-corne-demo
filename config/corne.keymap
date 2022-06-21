@@ -26,65 +26,53 @@
     combos {
         compatible = "zmk,combos";
 
-        ESCAPE {
+        ESCAPE_Combo {
             bindings = <&kp ESC>;
             key-positions = <19 20>;
         };
 
-        new_combo {
+        Left_Bracket {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <4 5>;
         };
 
-        new_combo {
+        Right_Bracket {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <6 7>;
         };
 
-        new_combo {
+        Left_Parethesis {
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <16 17>;
         };
 
-        new_combo {
+        Right_Parenthesis {
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <18 19>;
         };
 
-        new_combo {
+        Left_Brace {
             bindings = <&kp LEFT_BRACE>;
             key-positions = <28 29>;
         };
 
-        new_combo {
+        Right_Brace {
             bindings = <&kp RIGHT_BRACE>;
             key-positions = <30 31>;
         };
 
-        new_combo {
+        Back_Slash {
             bindings = <&kp BACKSLASH>;
             key-positions = <4 31>;
         };
 
-        new_combo {
+        Slash {
             bindings = <&kp SLASH>;
             key-positions = <28 7>;
         };
     };
 
     macros {
-        zed_em_kay: zed_em_kay {
-            compatible = "zmk,behavior-macro";
-            label = "ZM_zed_em_kay";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LSHFT>,
-                <&macro_tap>,
-                <&kp Z &kp M &kp K>,
-                <&macro_release>,
-                <&kp LSHFT>;
-        };
     };
 
     keymap {
