@@ -107,12 +107,21 @@
             >;
         };
 
-        Layer__3 {
+        Functions {
             bindings = <
  &bt BT_NXT 3  &bt BT_SEL 1  &trans  &trans      &trans  &trans          &trans        &trans  &trans  &trans  &trans             &reset
- &bt BT_PRV 1  &bt BT_SEL 2  &trans  &trans      &trans  &trans          &trans        &trans  &trans  &trans  &trans  &ext_power EP_TOG
+ &bt BT_PRV 1  &bt BT_SEL 2  &trans  &trans      &trans  &tog 4          &trans        &trans  &trans  &trans  &trans  &ext_power EP_TOG
  &bt BT_SEL 4  &bt BT_SEL 3  &trans  &trans      &trans  &trans          &trans        &trans  &trans  &trans  &trans        &bootloader
                                      &trans  &bt BT_CLR  &trans          &trans  &out OUT_TOG  &trans
+            >;
+        };
+
+        Gaming {
+            bindings = <
+        &kp ESC   &kp Q   &kp W      &kp E      &kp R   &kp T           &kp Y   &kp U      &kp I    &kp O          &kp P  &kp MINUS
+        &kp TAB   &kp A   &kp S      &kp D      &kp F   &kp G           &kp H   &kp J      &kp K    &kp L  &kp SEMICOLON   &kp APOS
+ &kp LEFT_SHIFT   &kp Z   &kp X      &kp C      &kp V   &kp B           &kp N   &kp M  &kp COMMA  &kp DOT       &kp FSLH  &kp EQUAL
+                                 &kp LCTRL  &kp SPACE  &tog 0          &trans  &trans     &trans
             >;
         };
     };
