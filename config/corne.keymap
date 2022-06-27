@@ -72,6 +72,16 @@
             bindings = <&kp SLASH>;
             key-positions = <28 7>;
         };
+
+        Backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <3 4>;
+        };
+
+        Delete {
+            bindings = <&kp DELETE>;
+            key-positions = <7 8>;
+        };
     };
 
     macros {
